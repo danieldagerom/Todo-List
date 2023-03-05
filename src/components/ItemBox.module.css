@@ -1,0 +1,12 @@
+.itemBox {
+    border: 1px solid var(--gray-700);
+    border-radius: 8px;
+    
+    height: 3.375rem;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    
+
+    background-color: var(--gray-400);
+}
