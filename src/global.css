@@ -13,7 +13,10 @@
     --gray-100: #f2f2f2;
 
     --danger: #e25858
+}
 
+:focus {
+    outline: transparent;
 }
 
 * {
@@ -29,9 +32,40 @@ body {
 
     font-family: 'Inter', sans-serif;
     font-weight: 400;
+    font-size: 14px;
 }
 
 button {
     font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+button:hover {
+    background: var(--blue);
+}
+
+textarea {
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
+    font-size: 14px;
+
+    width: 100%;
+
+    color: var(--gray-100);
+
+    margin-left: 1rem;
+    margin-top: 1.687rem;
+
+    height: 100%;
+    background: transparent;
+    border: 0;
+    resize: none;
 }

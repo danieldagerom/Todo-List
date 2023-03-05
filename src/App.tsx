@@ -1,5 +1,6 @@
 import { Header } from './components/Header';
-import { ItemBox } from './components/ItemBox';
+import { Item } from './components/Item';
+import { PlusCircle } from 'phosphor-react';
 import styles from './App.module.css'
 import './global.css'
 
@@ -8,9 +9,10 @@ export function App() {
         <div>
             <Header />
             <div className={styles.wrapper}>
-                <ItemBox />
+                <Item />
                 <button> 
-                    Criar + 
+                    Criar 
+                    <PlusCircle size={20}/>
                 </button>
             </div>
         </div>
