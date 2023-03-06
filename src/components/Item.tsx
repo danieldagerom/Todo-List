@@ -1,10 +1,11 @@
 import { ChangeEvent, FormEvent, useState } from 'react';
 import { NewItem } from './NewItem'
+import { PlusCircle } from 'phosphor-react';
 import styles from './Item.module.css'
 
 export function Item () {
     const [items, setItems] = useState([
-        'Jogar o lixo fora', 'brincar com cachorro'
+        'Jogar o lixo fora'
     ])
 
     const [newItemText, setNewItemText] = useState('')
@@ -26,11 +27,14 @@ export function Item () {
                 <textarea 
                     name="item" 
                     placeholder='Adicione uma nova tarefa' 
-                    maxLength={75}
                     value={newItemText}
                     onChange={handleNewItemChange}
                 >
                 </textarea>
+                <button type='submit'> 
+                    Criar 
+                    <PlusCircle size={20}/>
+                </button>
             </form>
 
             <div>

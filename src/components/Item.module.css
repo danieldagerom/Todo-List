@@ -1,12 +1,21 @@
 .itemBox {
     border: 1px solid var(--gray-700);
     border-radius: 8px;
+
+    max-width: 46rem;
     
     height: 3.375rem;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    
+    display: grid;
+   
 
-    background-color: var(--gray-400);
+    grid-template-columns: 39rem 1fr;
+
+    gap: 1rem;
+    align-items: center;
+    
+    background: var(--gray-400);
+}
+
+.itemBox button {
+    width: 5.625rem;
 }
