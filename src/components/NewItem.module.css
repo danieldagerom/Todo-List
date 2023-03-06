@@ -1,13 +1,14 @@
 .item {
-    max-width: 46rem;
+    width: 46rem;
     height: 3.375rem;
 
-    margin: -1.75rem auto;
     border-radius: 8px;
 
-    background: transparent;
+    background: brown;
+
+    display: flex;
 
     align-items: center;
 
-    margin-top: 10rem;
+    margin-top: 1rem;
 }

@@ -10,8 +10,7 @@
     display: grid;
     grid-template-columns: 39rem 1fr;
     gap: 1rem;
-    align-items: center;
-
+    align-items: flex-start;
 }
 
 button {

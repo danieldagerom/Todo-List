@@ -40,6 +40,8 @@ button {
     font-weight: 600;
     font-size: 14px;
 
+    max-height: 3.375rem;
+
     color: white;
 
     display: flex;

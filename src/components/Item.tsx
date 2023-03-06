@@ -4,7 +4,7 @@ import styles from './Item.module.css'
 
 export function Item () {
     const [items, setItems] = useState([
-        'Jogar o lixo fora'
+        'Jogar o lixo fora', 'brincar com cachorro'
     ])
 
     const [newItemText, setNewItemText] = useState('')
@@ -21,8 +21,8 @@ export function Item () {
     }
 
     return (
-        <div className={styles.itemBox}>
-            <form onSubmit={handleCreateNewItem}>
+        <div>
+            <form className={styles.itemBox} onSubmit={handleCreateNewItem}>
                 <textarea 
                     name="item" 
                     placeholder='Adicione uma nova tarefa' 
