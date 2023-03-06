@@ -10,7 +10,7 @@ export function App() {
             <Header />
             <div className={styles.wrapper}>
                 <Item />
-                <button> 
+                <button type='submit'> 
                     Criar 
                     <PlusCircle size={20}/>
                 </button>
