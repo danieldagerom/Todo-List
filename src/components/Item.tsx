@@ -29,6 +29,7 @@ export function Item () {
                     placeholder='Adicione uma nova tarefa' 
                     value={newItemText}
                     onChange={handleNewItemChange}
+                    maxLength={73}
                 >
                 </textarea>
 

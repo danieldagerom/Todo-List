@@ -7,7 +7,6 @@
     height: 3.375rem;
     display: grid;
    
-
     grid-template-columns: 39rem 1fr;
 
     gap: 0.5rem;
@@ -25,7 +24,6 @@
     font-weight: 400;
     font-size: 14px;
 
-    
     color: var(--gray-100);
 
     display: flex;
@@ -34,12 +32,11 @@
     
     height: 100%;
     width: 100%;
+    padding: 1rem;
 
     background: transparent;
     border: 0;
     resize: none;
-
-    padding: 1rem;
 }
 
 .itemBox textarea:focus {
