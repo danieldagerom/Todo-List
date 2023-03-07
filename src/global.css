@@ -27,7 +27,7 @@
 
 body {
     color: var(--blue);
-    background: var(--gray-500);
+    background: var(--gray-600);
     -webkit-font-smoothing: antialiased;
 
     font-family: 'Inter', sans-serif;
@@ -52,22 +52,4 @@ button {
 
 button:hover {
     background: var(--blue);
-}
-
-textarea {
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-
-    width: 100%;
-
-    color: var(--gray-100);
-
-    margin-left: 1rem;
-    margin-top: 1.687rem;
-
-    height: 100%;
-    background: transparent;
-    border: 0;
-    resize: none;
 }

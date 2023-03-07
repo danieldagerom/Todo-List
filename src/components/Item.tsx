@@ -31,6 +31,7 @@ export function Item () {
                     onChange={handleNewItemChange}
                 >
                 </textarea>
+
                 <button type='submit'> 
                     Criar 
                     <PlusCircle size={20}/>
