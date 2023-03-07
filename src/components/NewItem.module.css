@@ -5,13 +5,18 @@
     background: var(--gray-500);
     border-radius: 8px;
     border: 1.5px solid var(--gray-400);
-    display: flex;
+    display: grid;
+   
+    grid-template-columns: 1rem 41rem 1fr;
     align-items: center;
 
     margin-top: 6.687rem;
     padding-left: 1rem;
+    padding-right: 1rem;
 
     color: var(--gray-100);
+
+    flex: 1;
 }
 
 .item + .item {
@@ -25,18 +30,26 @@
     padding: 0.4rem;
     border-radius: 50%;
 
-
+    cursor: pointer;
 }
 
 .item input[type=checkbox]:checked {
     border: 2px solid var(--purple);
-
     background-image: radial-gradient(white 25%, var(--purple) 40%);
-    
 }
-
-
 
 .item p {
     padding-left: 0.7rem;
+}
+
+.item button {
+    background: transparent;
+    width: auto;
+    display: flex;
+    justify-content: right;
+}
+
+.item button:hover {
+    background: transparent;
+    color: var(--danger);
 }
