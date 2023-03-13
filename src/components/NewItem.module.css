@@ -15,8 +15,6 @@
     padding-right: 1rem;
 
     color: var(--gray-100);
-
-    flex: 1;
 }
 
 .item + .item {
@@ -41,6 +39,12 @@
 .item p {
     padding-left: 0.7rem;
 }
+
+.item input[type=checkbox]:checked ~ p{
+    text-decoration: line-through;
+    color: var(--gray-300);
+}
+
 
 .item button {
     background: transparent;

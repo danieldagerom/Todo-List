@@ -3,15 +3,21 @@ import { Trash } from 'phosphor-react';
 
 interface ItemProps {
     content: string;
+    onDeleteItem: (item: string) => void;
+    onCompleteItem: (item: string) => void;
 }
 
-export function NewItem( { content }: ItemProps ) {
+export function NewItem( { content, onCompleteItem ,onDeleteItem }: ItemProps ) {
     
+    function handleDeleteItem() {
+        onDeleteItem(content)
+    }
+
     return (
         <div className={styles.item}>
-            <input type="checkbox" className={styles.checkBox}/>
+            <input type="checkbox"/>
             <p>{content}</p>
-            <button title='Deletar item'>
+            <button onClick={handleDeleteItem} title='Deletar item'>
                 <Trash size={24} />
             </button>
         </div>

@@ -19,6 +19,15 @@
     width: 6.225rem;
 }
 
+.itemBox button[type=submit]:disabled{
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.itemBox button[type=submit]:disabled:hover{
+   background: var(--blue-dark);
+}
+
 .itemBox textarea {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
