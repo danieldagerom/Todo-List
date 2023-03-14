@@ -1,5 +1,6 @@
 .itemBox {
     border: 1px solid var(--gray-700);
+
     border-radius: 8px;
 
     max-width: 46rem;
@@ -72,7 +73,7 @@
 }
 
 .itemBox textarea:focus {
-    border-top: 1px solid var(--purple);
+    border: 1px solid var(--purple);
     border-radius: 8px;
 
     opacity: 0.65;
