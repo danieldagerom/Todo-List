@@ -16,7 +16,10 @@ export function Item () {
 
     function handleCreateNewItem(event: FormEvent){
         event.preventDefault()
-        setItems([...items, {id: crypto.randomUUID(), content: newItemText, isCompleted: false}])
+        setItems([...items, 
+                {id: crypto.randomUUID(), 
+                content: newItemText, 
+                isCompleted: false}])
         
         setNewItemText('')
     }
@@ -48,6 +51,8 @@ export function Item () {
 
     const isNewItemEmpty = newItemText.length === 0
 
+    const completedItems = items.filter(item => item.isCompleted).length;
+
     return (
         <div>
             <form className={styles.itemBox} onSubmit={handleCreateNewItem}>
@@ -68,12 +73,13 @@ export function Item () {
 
             <div>
                 <p>Tarefas Criadas: {items.length}</p>
-                <p>Concluidas: {}</p>
+                <p>Concluidas: {completedItems} de {items.length}</p>
             </div>
 
             <div>
                 {items.map (item => {
                     return <NewItem 
+                                itemId={item.id}
                                 content={item.content} 
                                 onCompleteItem={toggleItemsCompleted} 
                                 onDeleteItem={deleteItem}
