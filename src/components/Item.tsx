@@ -71,9 +71,9 @@ export function Item () {
                 </button>
             </form>
 
-            <div>
-                <p>Tarefas Criadas: {items.length}</p>
-                <p>Concluidas: {completedItems} de {items.length}</p>
+            <div className={styles.itemsAnalytics}>
+                <p>Tarefas Criadas: <span>{items.length}</span></p>
+                <p>Concluidas: <span>{completedItems} de {items.length}</span></p>
             </div>
 
             <div>

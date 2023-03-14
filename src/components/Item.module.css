@@ -54,3 +54,27 @@
 
     opacity: 0.65;
 }
+
+.itemsAnalytics {
+    display: flex;
+    justify-content: space-between;
+    width: 46rem;
+    margin-top: 4rem;
+    
+    font-weight: 600;
+}
+
+.itemsAnalytics p + p {
+    color: var(--purple);
+}
+
+.itemsAnalytics span {
+    color: var(--gray-100);
+    font-size: 12px;
+
+
+    border-radius: 4px;
+    background-color: var(--gray-400);
+    padding: 0.2rem;
+}
+
