@@ -1,6 +1,6 @@
 import { ChangeEvent, FormEvent, useState } from 'react';
 import { NewItem } from './NewItem'
-import { PlusCircle } from 'phosphor-react';
+import { ClipboardText, PlusCircle } from 'phosphor-react';
 import styles from './Item.module.css'
 
 interface Item {
@@ -86,6 +86,16 @@ export function Item () {
                             />
                 })}
             </div>
+
+            {items.length <= 0 && (
+               <section className={styles.noItemsCreated}>
+                    <ClipboardText size={50}/>
+                <div>
+                    <span>Você ainda não tem tarefas cadastradas</span> 
+                    <p>Crie tarefas e organize seus itens a fazer</p>
+                </div>
+               </section>
+            )}
         </div>
     );
 }

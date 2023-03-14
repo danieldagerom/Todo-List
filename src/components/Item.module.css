@@ -48,8 +48,31 @@
     resize: none;
 }
 
+.noItemsCreated {
+    width: 46rem;
+    padding-top: 4rem;
+    margin-top: 1.5rem;
+
+    text-align: center;
+    color: var(--gray-300);
+
+    border-radius: 8px;
+    border: 1px solid var(--gray-400);
+    border-bottom: transparent;
+    border-right: transparent;
+    border-left: transparent;
+}
+
+.noItemsCreated svg {
+    color: var(--gray-400);
+}
+
+.noItemsCreated span {
+    font-weight: bold;
+}
+
 .itemBox textarea:focus {
-    border: 1px solid var(--purple);
+    border-top: 1px solid var(--purple);
     border-radius: 8px;
 
     opacity: 0.65;
